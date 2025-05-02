@@ -5,156 +5,176 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Isidro Torregrosa Torralba – CV</title>
   <link rel="stylesheet" href="index-improved.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 </head>
 <body>
-  <div class="cv-grid">
-    <aside class="cv-aside" aria-labelledby="aside-heading">
-      <section class="cv-section cv-section--contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading" class="cv-title">Contact</h2>
-        <ul class="cv-contact">
-          <li><span class="cv-contact__label">Location:</span> Spain</li>
-          <li><span class="cv-contact__label">Phone:</span> <a href="tel:+34679379333">+34 679 379 333</a></li>
-          <li><span class="cv-contact__label">Email:</span> <a href="mailto:isistorre95@gmail.com">isistorre95@gmail.com</a></li>
-          <li><span class="cv-contact__label">GitHub:</span> <a href="https://github.com/isidrok" target="_blank" rel="noopener">isidrok</a></li>
-          <li><span class="cv-contact__label">LinkedIn:</span> <a href="https://linkedin.com/in/itorregrosa" target="_blank" rel="noopener">itorregrosa</a></li>
+  <div class="cv">
+    <aside class="cv__aside">
+      <section class="section">
+        <h2 class="section__title">Contact</h2>
+        <ul class="contact">
+          <li class="contact__item">
+            <i class="contact__icon fas fa-map-marker-alt"></i>
+            <a href="https://www.google.com/maps/place/Valencia" target="_blank" rel="noopener" class="contact__link">Valencia, Spain</a>
+          </li>
+          <li class="contact__item">
+            <i class="contact__icon fas fa-envelope"></i>
+            <a href="mailto:isistorre95@gmail.com" class="contact__link">isistorre95@gmail.com</a>
+          </li>
+          <li class="contact__item">
+            <i class="contact__icon fas fa-phone"></i>
+            <a href="tel:+34679379333" class="contact__link">+34 679 379 333</a>
+          </li>
+          <li class="contact__item">
+            <i class="contact__icon fas fa-globe"></i>
+            <a href="https://isidrok.github.io/" target="_blank" rel="noopener" class="contact__link">isidrok.github.io</a>
+          </li>
+          <li class="contact__item">
+            <i class="contact__icon fab fa-github"></i>
+            <a href="https://github.com/isidrok" target="_blank" rel="noopener" class="contact__link">isidrok</a>
+          </li>
+          <li class="contact__item">
+            <i class="contact__icon fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/itorregrosa" target="_blank" rel="noopener" class="contact__link">itorregrosa</a>
+          </li>
         </ul>
       </section>
-      <section class="cv-section cv-section--skills" aria-labelledby="skills-heading">
-        <h2 id="skills-heading" class="cv-title">Skills</h2>
-        <div class="cv-skills-badges">
-          <div class="cv-skill-group">
-            <span class="cv-skill-group__heading">Leadership</span>
-            <div class="cv-badges">
-              <span class="cv-badge">Mentorship</span>
-              <span class="cv-badge">Communication</span>
-              <span class="cv-badge">Collaboration</span>
-              <span class="cv-badge">Delegation</span>
-              <span class="cv-badge">Decision-Making</span>
-              <span class="cv-badge">Planning</span>
-              <span class="cv-badge">Delivery</span>
-              <span class="cv-badge">Culture</span>
+      <section class="section">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills">
+          <div class="skills-group">
+            <span class="skills-group__title">Leadership</span>
+            <div class="skills-group__badges">
+              <span class="skills-group__badge">Mentorship</span>
+              <span class="skills-group__badge">Communication</span>
+              <span class="skills-group__badge">Collaboration</span>
+              <span class="skills-group__badge">Delegation</span>
+              <span class="skills-group__badge">Decision-Making</span>
+              <span class="skills-group__badge">Planning</span>
+              <span class="skills-group__badge">Delivery</span>
+              <span class="skills-group__badge">Culture</span>
             </div>
           </div>
-          <div class="cv-skill-group">
-            <span class="cv-skill-group__heading">Languages & Frameworks</span>
-            <div class="cv-badges">
-              <span class="cv-badge">JavaScript / TypeScript</span>
-              <span class="cv-badge">CSS / SCSS</span>
-              <span class="cv-badge">Web Components</span>
-              <span class="cv-badge">React</span>
-              <span class="cv-badge">Angular</span>
-              <span class="cv-badge">Vue</span>
-              <span class="cv-badge">Next.js</span>
-              <span class="cv-badge">Node.js</span>
-              <span class="cv-badge">Nest</span>
+          <div class="skills-group">
+            <span class="skills-group__title">Languages & Frameworks</span>
+            <div class="skills-group__badges">
+              <span class="skills-group__badge">JavaScript / TypeScript</span>
+              <span class="skills-group__badge">CSS / SCSS</span>
+              <span class="skills-group__badge">Web Components</span>
+              <span class="skills-group__badge">React</span>
+              <span class="skills-group__badge">Angular</span>
+              <span class="skills-group__badge">Vue</span>
+              <span class="skills-group__badge">Next.js</span>
+              <span class="skills-group__badge">Node.js</span>
+              <span class="skills-group__badge">Nest</span>
             </div>
           </div>
-          <div class="cv-skill-group">
-            <span class="cv-skill-group__heading">Architecture & Design</span>
-            <div class="cv-badges">
-              <span class="cv-badge">Clean Architecture</span>
-              <span class="cv-badge">DDD</span>
-              <span class="cv-badge">CI / CD</span>
-              <span class="cv-badge">API Design</span>
-              <span class="cv-badge">Authentication </span>
-              <span class="cv-badge">Security</span>
-              <span class="cv-badge">Accessibility</span>
-              <span class="cv-badge">Performance</span>
-              <span class="cv-badge">Monorepos</span>
+          <div class="skills-group">
+            <span class="skills-group__title">Architecture & Design</span>
+            <div class="skills-group__badges">
+              <span class="skills-group__badge">Clean Architecture</span>
+              <span class="skills-group__badge">DDD</span>
+              <span class="skills-group__badge">CI / CD</span>
+              <span class="skills-group__badge">API Design</span>
+              <span class="skills-group__badge">Authentication</span>
+              <span class="skills-group__badge">Security</span>
+              <span class="skills-group__badge">Accessibility</span>
+              <span class="skills-group__badge">Performance</span>
+              <span class="skills-group__badge">Monorepos</span>
             </div>
           </div>
         </div>
       </section>
-      <section class="cv-section cv-section--languages" aria-labelledby="languages-heading">
-        <h2 id="languages-heading" class="cv-title">Languages</h2>
-        <div class="cv-languages">
-          <div class="cv-language">
-            <span class="cv-experience__role">Spanish</span><br>
-            <span class="cv-dates">Native speaker</span>
+      <section class="section">
+        <h2 class="section__title">Languages</h2>
+        <div class="languages">
+          <div class="language">
+            <strong class="language__name">Spanish</strong>
+            <span class="language__level">Native speaker</span>
           </div>
-          <div class="cv-language">
-            <span class="cv-experience__role">English</span><br>
-            <span class="cv-dates">Full professional proficiency</span>
+          <div class="language">
+            <strong class="language__name">English</strong>
+            <span class="language__level">Full professional proficiency</span>
           </div>
         </div>
       </section>
     </aside>
-    <div class="cv-headline">
-      <h1 class="cv-name">Isidro Torregrosa Torralba</h1>
-      <h2 class="cv-professional-title">Technical Lead & Senior Full-Stack Engineer</h2>
-    </div>
-    <main class="cv-main" id="main-content">
-      <section class="cv-section cv-section--profile">
-        <p>
+    <header class="cv__header">
+      <h1 class="cv__name">Isidro Torregrosa Torralba</h1>
+      <h2 class="cv__title">Technical Lead & Senior Full-Stack Engineer</h2>
+    </header>
+    <main class="cv__main">
+      <section class="section about">
+        <p class="about__paragraph">
           <strong>Technical Lead</strong> and engineer with over 8 years of experience helping <strong>distributed remote teams</strong> deliver robust, well-designed software. I combine <strong>hands-on development</strong>, technical guidance, and close <strong>collaboration</strong> to achieve high-quality results.
         </p>
-        <p>
+        <p class="about__paragraph">
           My expertise is in <strong>JavaScript</strong>, <strong>Node.js</strong>, and <strong>web development</strong>. I work with engineers, product managers, and designers to align vision and execution—providing <strong>architectural advice</strong>, <strong>mentorship</strong>, and a strong focus on delivery quality.
         </p>
-        <p>
+        <p class="about__paragraph">
           I am passionate about understanding how systems work and continuously deepening my technical knowledge. Recently, I have been exploring ways to integrate <strong>AI</strong> into my workflow to boost efficiency and streamline processes. I occasionally contribute to <strong>open source</strong> when the opportunity or need arises.
         </p>
       </section>
-      <section class="cv-section cv-section--experience" aria-labelledby="experience-heading">
-        <h2 id="experience-heading" class="cv-title">Work Experience</h2>
-        <div class="cv-experience">
-          <div class="cv-experience__header">
-            <strong class="cv-experience__role">Technical Lead & Full-Stack Engineer — JLL</strong>
-            <span class="cv-experience__dates"><em>Aug 2021 – Present</em></span>
+      <section class="section">
+        <h2 class="section__title">Work Experience</h2>
+        <div class="experience">
+          <div class="experience__header">
+            <strong class="experience__role">Technical Lead & Full-Stack Engineer — JLL</strong>
+            <span class="experience__date">Aug 2021 – Present</span>
           </div>
-          <ul class="cv-experience__highlights">
+          <ul class="experience__list">
             <li><strong>Lead development</strong> of business-critical applications using <strong>TypeScript</strong>, <strong>Node.js</strong>, <strong>Angular</strong>, <strong>React</strong>, <strong>Next.js</strong>, and <strong>NestJS</strong>.</li>
             <li><strong>Drive global cross-team alignment</strong> and communication across <strong>product</strong>, <strong>design</strong>, and <strong>engineering</strong> teams to ensure smooth project execution.</li>
             <li><strong>Improve team efficiency</strong> and expertise through <strong>engineering guidance</strong>, <strong>mentorship</strong>, and <strong>delegation</strong>.</li>
           </ul>
         </div>
-        <div class="cv-experience">
-          <div class="cv-experience__header">
-            <strong class="cv-experience__role">Full-Stack Engineer & Trainer — Freelance</strong>
-            <span class="cv-experience__dates"><em>Jan 2020 – Aug 2021</em></span>
+        <div class="experience">
+          <div class="experience__header">
+            <strong class="experience__role">Full-Stack Engineer & Trainer — Freelance</strong>
+            <span class="experience__date">Jan 2020 – Aug 2021</span>
           </div>
-          <ul class="cv-experience__highlights">
+          <ul class="experience__list">
             <li>Built a performant <strong>PWA</strong> with <strong>server-side rendering</strong> and advanced hydration using <strong>React</strong> and <strong>Express</strong> for a client's corporate website.</li>
             <li>Delivered <strong>over 1,000 hours of on-site training</strong>, teaching <strong>full-stack web development</strong> to aspiring developers and corporate teams. Covered <strong>JavaScript</strong>, <strong>Node.js</strong>, <strong>Web components</strong>, <strong>Angular</strong>, <strong>React</strong>, <strong>Vue</strong>, and <strong>Web fundamentals</strong>—working with clients such as <strong>BBVA</strong>, <strong>Telefónica</strong>, or <strong>ONCE</strong>.</li>
           </ul>
         </div>
-        <div class="cv-experience">
-          <div class="cv-experience__header">
-            <strong class="cv-experience__role">Frontend Engineer — BBVA</strong>
-            <span class="cv-experience__dates"><em>Jun 2018 – Jan 2020</em></span>
+        <div class="experience">
+          <div class="experience__header">
+            <strong class="experience__role">Frontend Engineer — BBVA</strong>
+            <span class="experience__date">Jun 2018 – Jan 2020</span>
           </div>
-          <ul class="cv-experience__highlights">
+          <ul class="experience__list">
             <li>Contributed to the core team of a major Spanish banking site, enhancing the <strong>developer experience</strong> for 50+ professionals using <strong>plain JavaScript</strong>.</li>
             <li>Maintained and evolved infrastructure to improve <strong>performance</strong>, <strong>accessibility</strong>, <strong>testing</strong>, and the <strong>build process</strong>.</li>
           </ul>
         </div>
-        <div class="cv-experience">
-          <div class="cv-experience__header">
-            <strong class="cv-experience__role">Fullstack Engineer — Opinno</strong>
-            <span class="cv-experience__dates"><em>Oct 2017 – Jun 2018</em></span>
+        <div class="experience">
+          <div class="experience__header">
+            <strong class="experience__role">Fullstack Engineer — Opinno</strong>
+            <span class="experience__date">Oct 2017 – Jun 2018</span>
           </div>
-          <ul class="cv-experience__highlights">
+          <ul class="experience__list">
             <li>Used <strong>React</strong> and <strong>Node.js</strong> for delivering smart-building solutions.</li>
           </ul>
         </div>
-        <div class="cv-experience">
-          <div class="cv-experience__header">
-            <strong class="cv-experience__role">Frontend Engineer — Alfatec Sistemas</strong>
-            <span class="cv-experience__dates"><em>Dec 2016 – Oct 2017</em></span>
+        <div class="experience">
+          <div class="experience__header">
+            <strong class="experience__role">Frontend Engineer — Alfatec Sistemas</strong>
+            <span class="experience__date">Dec 2016 – Oct 2017</span>
           </div>
-          <ul class="cv-experience__highlights">
+          <ul class="experience__list">
             <li>Contributed to the development of a hospital information system using <strong>Angular</strong>.</li>
           </ul>
         </div>
       </section>
-      <section class="cv-section cv-section--education">
-        <h2 class="cv-title">Education</h2>
-        <div class="cv-experience">
-          <div class="cv-experience__header">
-            <strong class="cv-experience__role">BS Software Development — Universidad Politécnica de Valencia</strong>
-            <span class="cv-experience__dates"><em>Sep 2014 – Sep 2020</em></span>
+      <section class="section">
+        <h2 class="section__title">Education</h2>
+        <div class="experience">
+          <div class="experience__header">
+            <strong class="experience__role">BS Software Development — Universidad Politécnica de Valencia</strong>
+            <span class="experience__date">Sep 2014 – Sep 2020</span>
           </div>
-          <ul class="cv-experience__highlights">
+          <ul class="experience__list">
             <li>Thesis about modular web development proposing a <strong>micro-frontend</strong> based architecture.</li>
           </ul>
         </div>
