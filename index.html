@@ -3,21 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Isidro Torregrosa Torralba – Technical Lead</title>
+    <title>Isidro Torregrosa Torralba - Staff Engineer</title>
     <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <style>
-      :root {
-        --primary: #2563eb;
-        --text: #1f2937;
-        --muted: #6b7280;
-        --border: #e5e7eb;
-        --bg: #ffffff;
-        --section-color: #1e40af;
-      }
-
       * {
         margin: 0;
         padding: 0;
@@ -25,520 +16,527 @@
       }
 
       body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          sans-serif;
-        line-height: 1.6;
-        color: var(--text);
-        background: var(--bg);
-        font-size: 15px;
-        -webkit-font-smoothing: antialiased;
+        font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+        line-height: 1.5;
+        color: #2c3e50;
+        background: #ffffff;
+        font-size: 13px;
       }
 
       .container {
-        max-width: 850px;
+        max-width: 210mm;
         margin: 0 auto;
-        padding: 40px 40px;
+        background: white;
       }
 
-      header {
-        display: grid;
-        grid-template-columns: 1fr auto;
-        grid-template-rows: auto auto;
-        margin-bottom: 32px;
-        gap: 20px;
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #ecf0f1;
+        padding-bottom: 15px;
       }
 
-      .contact-info {
-        grid-column: 2;
-        grid-row: 1;
+      .name {
+        font-size: 24px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 5px;
       }
 
-      h1 {
-        font-size: 32px;
+      .title {
+        font-size: 15px;
+        color: #6c757d;
         font-weight: 600;
-        margin-bottom: 6px;
-        letter-spacing: -0.5px;
-        grid-column: 1;
-        grid-row: 1;
+        margin-bottom: 12px;
       }
 
-      h2 {
-        font-size: 18px;
-        color: var(--muted);
-        font-weight: 400;
-        grid-column: 1 / -1;
-        grid-row: 2;
+      .contact {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 8px;
       }
 
-      .contact-info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 5px 15px;
-        grid-column: 2;
-        grid-row: 1;
-      }
-
-      .contact-info a {
-        color: var(--muted);
-        text-decoration: none;
-        font-size: 14px;
+      .contact-item {
         display: flex;
         align-items: center;
-        gap: 8px;
-        justify-content: flex-start;
-        transition: color 0.2s;
+        gap: 4px;
+        color: #7f8c8d;
+        font-size: 11px;
       }
 
-      .contact-info a:hover {
-        color: var(--primary);
-      }
-
-      .contact-info i {
+      .contact-item i {
+        color: #2c3e50;
         font-size: 13px;
-        width: 16px;
-        text-align: center;
+        margin-right: 4px;
       }
 
-      /* Summary */
-      .summary {
-        margin-bottom: 32px;
+      .contact-item a {
+        color: #2c3e50;
+        text-decoration: none;
+      }
+
+      .contact-item a:hover {
+        color: #6c757d;
+        text-decoration: underline;
+      }
+
+      .value-prop {
+        background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        padding: 15px;
+        border-radius: 6px;
+        margin-bottom: 20px;
+      }
+
+      .value-prop p {
+        margin-bottom: 10px;
+        font-size: 13px;
+        line-height: 1.5;
+      }
+
+      .value-prop p:last-child {
+        margin-bottom: 0;
+      }
+
+      .two-column-layout {
+        display: flex;
+        gap: 25px;
+        align-items: flex-start;
+      }
+
+      .left-column {
+        flex: 2;
+      }
+
+      .right-column {
+        flex: 1;
+      }
+
+      .section {
+        margin-bottom: 25px;
+      }
+
+      .section-title {
         font-size: 16px;
-        line-height: 1.8;
-        color: var(--text);
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 15px;
+        padding-bottom: 6px;
+        border-bottom: 2px solid #ecf0f1;
+        position: relative;
       }
 
-      .summary strong {
-        font-weight: 600;
+      .section-title::before {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background: #6c757d;
       }
 
-      /* Main Grid */
-      .main-content {
-        display: grid;
-        grid-template-columns: 1.8fr 1fr;
-        gap: 50px;
+      .job {
+        margin-bottom: 20px;
+        background: #fdfdfd;
+        padding: 12px;
+        border-radius: 5px;
+        border: 1px solid #ecf0f1;
+        page-break-inside: avoid;
+        break-inside: avoid;
       }
 
-      /* Section Styles */
-      section {
-        margin-bottom: 32px;
-      }
-
-      section:last-child {
-        margin-bottom: 0;
-      }
-
-      h3 {
-        font-size: 14px;
-        font-weight: 600;
-        text-transform: uppercase;
-        letter-spacing: 1.2px;
-        color: var(--section-color);
-        margin-bottom: 18px;
-        border-bottom: 1px solid var(--border);
-        padding-bottom: 8px;
-      }
-
-      /* Experience */
-      .experience-item {
-        margin-bottom: 28px;
-      }
-
-      .experience-item:last-child {
-        margin-bottom: 0;
-      }
-
-      .experience-header {
+      .job-header {
         display: flex;
         justify-content: space-between;
-        align-items: baseline;
-        margin-bottom: 12px;
-        gap: 10px;
+        align-items: flex-start;
+        margin-bottom: 8px;
       }
 
-      .role {
-        font-weight: 600;
-        font-size: 17px;
+      .job-title {
+        font-size: 15px;
+        font-weight: 700;
+        color: #2c3e50;
       }
 
       .company {
-        color: var(--muted);
-        font-weight: 400;
-      }
-
-      .date {
-        color: var(--muted);
         font-size: 14px;
+        color: #6c757d;
+        font-weight: 600;
       }
 
-      .experience-item ul {
-        list-style: none;
-        padding: 0;
+      .duration {
+        font-size: 11px;
+        color: #7f8c8d;
+        font-weight: 500;
       }
 
-      .experience-item li {
-        padding-left: 18px;
+      .job-description {
+        font-style: italic;
+        color: #5d6d7e;
+        margin-bottom: 10px;
+        font-size: 13px;
+        font-weight: 500;
+      }
+
+      .impact-section {
+        margin: 15px 0;
+      }
+
+      .impact-title {
+        font-size: 13px;
+        font-weight: 700;
+        color: #2c3e50;
         margin-bottom: 8px;
-        font-size: 15px;
-        line-height: 1.7;
-        color: var(--text);
-        position: relative;
       }
 
-      .experience-item li:before {
-        content: "–";
+      .achievement {
+        margin-bottom: 8px;
+        padding-left: 12px;
+        position: relative;
+        font-size: 12px;
+        line-height: 1.4;
+      }
+
+      .achievement::before {
+        content: "▸";
         position: absolute;
         left: 0;
-        color: var(--muted);
+        color: #6c757d;
+        font-weight: bold;
       }
 
-      /* Skills */
+      .achievement strong {
+        color: #2c3e50;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
       .skill-category {
-        margin-bottom: 24px;
-      }
-
-      .skill-category:last-child {
-        margin-bottom: 0;
+        background: #f8f9fa;
+        padding: 12px;
+        border-radius: 5px;
+        page-break-inside: avoid;
+        break-inside: avoid;
       }
 
       .skill-category h4 {
-        font-size: 14px;
+        font-size: 13px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 6px;
+      }
+
+      .skill-category p {
+        color: #5d6d7e;
+        font-size: 11px;
+        line-height: 1.4;
+      }
+
+      .education {
+        background: #f8f9fa;
+        padding: 12px;
+        border-radius: 5px;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+
+      .degree {
+        font-size: 13px;
+        font-weight: 700;
+        color: #2c3e50;
+        margin-bottom: 3px;
+      }
+
+      .university {
+        color: #6c757d;
         font-weight: 600;
-        margin-bottom: 12px;
-        color: var(--text);
+        font-size: 12px;
+        margin-bottom: 5px;
       }
 
-      .skill-list {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
+      .thesis {
+        font-style: italic;
+        color: #7f8c8d;
+        font-size: 11px;
+        margin-top: 6px;
       }
 
-      .skill-item {
-        font-size: 14px;
-        color: var(--muted);
-        padding-left: 14px;
-        position: relative;
-      }
-
-      .skill-item:before {
-        content: "•";
-        position: absolute;
-        left: 0;
-        color: var(--border);
-      }
-
-      .skill-item.primary {
-        color: var(--text);
-        font-weight: 500;
-      }
-
-      .skill-item.primary:before {
-        color: var(--primary);
-      }
-
-      /* Languages */
-      .language-item {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-        font-size: 14px;
-      }
-
-      .language-name {
-        font-weight: 500;
-      }
-
-      .language-level {
-        color: var(--muted);
-      }
-
-      /* Print Styles - Optimized for PDF */
       @media print {
         body {
-          font-size: 11pt;
-          line-height: 1.5;
+          font-size: 11px;
         }
-
         .container {
-          padding: 0;
-          max-width: 100%;
+          margin: 0;
         }
-
-        header {
-          margin-bottom: 20px;
+        .value-prop {
+          background: #f8f9fa !important;
+          -webkit-print-color-adjust: exact;
         }
-
-        .summary {
-          margin-bottom: 20px;
-          font-size: 11pt;
-          line-height: 1.6;
+        .achievement {
+          font-size: 11px;
         }
-
-        section {
-          margin-bottom: 20px;
-        }
-
-        h3 {
-          font-size: 11pt;
-          margin-bottom: 12px;
-          page-break-after: avoid;
-        }
-
-        .experience-item {
-          page-break-inside: avoid;
-          margin-bottom: 18px;
-        }
-
-        .experience-item li {
-          font-size: 10.5pt;
-          margin-bottom: 6px;
-        }
-
-        .skill-item {
-          font-size: 10pt;
-        }
-
-        @page {
-          margin: 0.6in;
-          size: A4;
+        .skill-category p {
+          font-size: 10px;
         }
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <header>
-        <h1>Isidro Torregrosa Torralba</h1>
-        <h2>Technical Lead & Product-Focused Engineer</h2>
-        <div class="contact-info">
-          <a href="mailto:isistorre95@gmail.com">
-            <i class="fas fa-envelope"></i>
-            <span>isistorre95@gmail.com</span>
-          </a>
-          <a href="https://isidrok.github.io/" target="_blank" rel="noopener">
-            <i class="fas fa-globe"></i>
-            <span>isidrok.github.io</span>
-          </a>
-          <a href="tel:+34679379333">
-            <i class="fas fa-phone"></i>
-            <span>+34 679 379 333</span>
-          </a>
-          <a href="https://github.com/isidrok" target="_blank" rel="noopener">
-            <i class="fab fa-github"></i>
-            <span>github.com/isidrok</span>
-          </a>
-          <a
-            href="https://maps.google.com/?q=Valencia,Spain"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="fas fa-map-marker-alt"></i>
-            <span>Valencia, Spain</span>
-          </a>
-          <a
-            href="https://linkedin.com/in/itorregrosa"
-            target="_blank"
-            rel="noopener"
-          >
-            <i class="fab fa-linkedin"></i>
-            <span>linkedin.com/in/itorregrosa</span>
-          </a>
+      <header class="header">
+        <h1 class="name">Isidro Torregrosa Torralba</h1>
+        <h2 class="title">
+          Staff Engineer | Technical Leadership & Platform Development
+        </h2>
+
+        <div class="contact">
+          <div class="contact-item">
+            <i class="material-icons">email</i>
+            <a href="mailto:isistorre95@gmail.com">isistorre95@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <i class="material-icons">phone</i>
+            <a href="tel:+34679379333">+34 679 379 333</a>
+          </div>
+          <div class="contact-item">
+            <i class="material-icons">location_on</i>
+            <a href="https://www.google.es/maps/place/Spain" target="_blank"
+              >Spain</a
+            >
+          </div>
+        </div>
+        <div class="contact">
+          <div class="contact-item">
+            <i class="material-icons">language</i>
+            <a href="https://isidrok.github.io" target="_blank"
+              >isidrok.github.io</a
+            >
+          </div>
+          <div class="contact-item">
+            <i class="material-icons">code</i>
+            <a href="https://github.com/isidrok" target="_blank"
+              >github.com/isidrok</a
+            >
+          </div>
+          <div class="contact-item">
+            <i class="material-icons">work</i>
+            <a href="https://linkedin.com/in/itorregrosa" target="_blank"
+              >linkedin.com/in/itorregrosa</a
+            >
+          </div>
         </div>
       </header>
 
-      <div class="summary">
+      <div class="value-prop">
+        <p>
+          <strong>Staff Engineer</strong> with 8+ years transforming engineering
+          teams and scaling business-critical platforms. Proven track record
+          delivering enterprise systems with company-wide adoption while driving
+          growth in key business metrics. Expert at organizational
+          transformation—leading teams from waterfall to agile delivery while
+          developing engineers for promotion.
+        </p>
+
         <p>
           <strong
-            >Technical Lead with 8+ years bridging engineering and
-            product</strong
+            >Technical leader who scales through influence and
+            collaboration.</strong
           >
-          to deliver exceptional software. Expert at making product delivery
-          successful by connecting technical execution with business needs. I
-          excel at collaborating with product managers, designers, and
-          stakeholders through direct, transparent communication to shape
-          feasible roadmaps while mentoring engineers to foster growth and
-          autonomy.
-        </p>
-        <br />
-        <p>
-          <strong>Web technology expert</strong> with deep knowledge of
-          JavaScript ecosystems, Node.js, security, performance, and design
-          systems. Early adopter of AI coding tools to boost team productivity.
-          I thrive when establishing agile, squad-focused workflows where teams
-          naturally succeed.
+          Specializes in bridging technical excellence with business strategy,
+          turning complex requirements into platforms that drive measurable
+          outcomes. Experienced mentor and team contributor who improves
+          effectiveness while maintaining excellent work-life balance.
         </p>
       </div>
 
-      <div class="main-content">
+      <div class="two-column-layout">
         <div class="left-column">
-          <section>
-            <h3>Experience</h3>
+          <section class="section">
+            <h2 class="section-title">Professional Impact</h2>
 
-            <div class="experience-item">
-              <div class="experience-header">
+            <div class="job">
+              <div class="job-header">
                 <div>
-                  <span class="role">Technical Lead</span>
-                  <span class="company">@ JLL</span>
+                  <div class="job-title">Staff Engineer & Technical Lead</div>
+                  <div class="company">JLL Capital Markets</div>
                 </div>
-                <span class="date">Aug 2021 – Present</span>
+                <div class="duration">Aug 2021 – Present</div>
               </div>
-              <ul>
-                <li>
-                  Lead squad of <strong>8 engineers</strong> building Investor
-                  Center and DealX, JLL's
-                  <strong>flagship capital markets platforms</strong> for
-                  investment and deal execution
-                </li>
-                <li>
-                  Provide <strong>technical architecture guidance</strong> to
-                  additional squads, ensuring consistency across platform
-                  services and optimal technical decisions
-                </li>
-                <li>
-                  Active contributor to the development of the
-                  <strong>enterprise design system</strong>, establishing
-                  patterns and components used across multiple products
-                </li>
-                <li>
-                  Established agile, squad-focused methodology resulting in
-                  <strong>autonomous teams</strong> that deliver consistently
-                  without constant oversight
-                </li>
-                <li>
-                  <strong>Mentor and develop engineering talent</strong> while
-                  fostering positive team culture focused on wellbeing, helping
-                  members grow into senior roles in an environment where they
-                  thrive
-                </li>
-                <li>
-                  Drive technical decisions using
-                  <strong
-                    >TypeScript, Node.js, NestJS, React and Next.js</strong
-                  >
-                  among others, ensuring high standards of performance,
-                  security, and maintainability
-                </li>
-                <li>
-                  Champion <strong>adoption of AI coding assistants</strong> and
-                  modern development tools to enhance team productivity
-                </li>
-              </ul>
+
+              <div class="job-description">
+                Leading technical architecture for JLL's capital markets
+                platforms supporting $98B+ annual production volume
+              </div>
+
+              <div class="impact-section">
+                <div class="impact-title">
+                  Platform Excellence & Business Impact:
+                </div>
+                <div class="achievement">
+                  <strong>Global-Scale Platform Impact:</strong> Principal
+                  engineer for JLL's flagship capital markets platforms
+                  achieving complete adoption across US operations and 23K+
+                  monthly CA/NDA signatures, supporting $98B+ annual production
+                  volume
+                </div>
+                <div class="achievement">
+                  <strong>Enterprise System Consolidation:</strong> Designed and
+                  implemented platform strategy eliminating operational
+                  complexity from multiple disconnected systems while ensuring
+                  high availability for business-critical operations supporting
+                  global capital markets
+                </div>
+              </div>
+
+              <div class="impact-section">
+                <div class="impact-title">Leadership & Innovation:</div>
+                <div class="achievement">
+                  <strong>Organizational Transformation:</strong> Led
+                  transformation from waterfall to established agile
+                  methodology, creating predictable delivery cycles while
+                  mentoring multiple engineers resulting in promotions
+                </div>
+                <div class="achievement">
+                  <strong>Cross-functional Leadership:</strong> Lead technical
+                  strategy across cross-functional teams without direct reports,
+                  achieving autonomous team performance through influence and
+                  technical mentorship
+                </div>
+                <div class="achievement">
+                  <strong>Technical Excellence & Standards:</strong> Drive
+                  architecture decisions across TypeScript/Node.js/Frontend
+                  ecosystem, establishing coding standards adopted by multiple
+                  product teams, contributing to enterprise design system, and
+                  leading adoption of AI coding assistants as productivity tools
+                  with practical usage guidelines
+                </div>
+              </div>
             </div>
 
-            <div class="experience-item">
-              <div class="experience-header">
+            <div class="job">
+              <div class="job-header">
                 <div>
-                  <span class="role">Full-Stack Engineer & Trainer</span>
-                  <span class="company">@ Freelance</span>
+                  <div class="job-title">
+                    Full-Stack Developer & Corporate Trainer
+                  </div>
+                  <div class="company">Freelance</div>
                 </div>
-                <span class="date">Jan 2020 – Aug 2021</span>
+                <div class="duration">Jan 2020 – Aug 2021</div>
               </div>
-              <ul>
-                <li>
-                  Delivered <strong>1,000+ hours</strong> of web development
-                  training to corporate teams at
-                  <strong>BBVA, Telefónica, and ONCE</strong>
-                </li>
-                <li>
-                  Built high-performance PWA with SSR and advanced hydration
-                  strategies for enterprise clients
-                </li>
-                <li>
-                  Taught modern web stack including JavaScript, Node.js, React,
-                  Angular, Vue, and Web Components
-                </li>
-              </ul>
+
+              <div class="job-description">
+                Independent development and corporate training focused on modern
+                web technologies
+              </div>
+
+              <div class="achievement">
+                <strong>Corporate Training:</strong> Delivered 1,000+ hours of
+                hands-on web development training to engineering teams at major
+                Spanish companies (BBVA, Telefónica, ONCE), covering modern
+                JavaScript ecosystem including React, Angular, Vue, and Node.js
+              </div>
+              <div class="achievement">
+                <strong>Full-Stack Development:</strong> Built high-performance
+                progressive web applications with server-side rendering,
+                implementing advanced optimization techniques and modern
+                development practices
+              </div>
             </div>
 
-            <div class="experience-item">
-              <div class="experience-header">
+            <div class="job">
+              <div class="job-header">
                 <div>
-                  <span class="role">Frontend Engineer</span>
-                  <span class="company">@ BBVA</span>
+                  <div class="job-title">Senior Frontend Engineer</div>
+                  <div class="company">BBVA Digital Banking</div>
                 </div>
-                <span class="date">Jun 2018 – Jan 2020</span>
+                <div class="duration">Jun 2018 – Jan 2020</div>
               </div>
-              <ul>
-                <li>
-                  Core team member enhancing developer experience for
-                  <strong>50+ engineers</strong> on major banking platform
-                </li>
-                <li>
-                  Improved performance, accessibility, testing infrastructure,
-                  and build processes using vanilla JavaScript
-                </li>
-              </ul>
+
+              <div class="job-description">
+                Core team member enhancing developer experience for 50+
+                engineers on critical banking infrastructure
+              </div>
+
+              <div class="achievement">
+                <strong>Platform Engineering:</strong> Led infrastructure
+                improvements including build processes, testing frameworks, and
+                development workflows for major European banking platform
+              </div>
+              <div class="achievement">
+                <strong>Accessibility Leadership:</strong> Implemented WCAG
+                compliance standards across core banking flows serving thousands
+                of daily users
+              </div>
             </div>
           </section>
         </div>
 
         <div class="right-column">
-          <section>
-            <h3>Technical Skills</h3>
-
-            <div class="skill-category">
-              <h4>Core Stack</h4>
-              <div class="skill-list">
-                <div class="skill-item primary">
-                  JavaScript, TypeScript, HTML, CSS, SCSS
-                </div>
-                <div class="skill-item primary">Node.js & Web Development</div>
-                <div class="skill-item primary">React & Next.js</div>
-                <div class="skill-item primary">NestJS</div>
-                <div class="skill-item primary">Web Performance & Security</div>
-                <div class="skill-item">Angular, Vue & Web Components</div>
-                <div class="skill-item">Azure Cloud Services</div>
+          <section class="section">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>Core Technologies</h4>
+                <p>
+                  JavaScript/TypeScript, Web Platform, Node.js, React, NextJS,
+                  NestJS, Vue, Angular, HTML5, CSS3/SCSS, Web Components
+                </p>
               </div>
-            </div>
-
-            <div class="skill-category">
-              <h4>What I Actually Do</h4>
-              <div class="skill-list">
-                <div class="skill-item primary">
-                  Shape product strategy with stakeholders
-                </div>
-                <div class="skill-item primary">
-                  Build autonomous engineering teams
-                </div>
-                <div class="skill-item primary">
-                  Bridge technical and business needs
-                </div>
-                <div class="skill-item primary">
-                  Champion AI coding assistants adoption
-                </div>
-                <div class="skill-item">Mentor engineers to senior roles</div>
-                <div class="skill-item">Drive architectural decisions</div>
-                <div class="skill-item">Establish agile workflows</div>
+              <div class="skill-category">
+                <h4>Platform & Infrastructure</h4>
+                <p>Azure, Docker, CI/CD, Databases (working knowledge)</p>
+              </div>
+              <div class="skill-category">
+                <h4>Architecture Principles</h4>
+                <p>
+                  Domain Driven Design, Security, Authentication, Performance,
+                  Accessibility, Enterprise Architecture
+                </p>
+              </div>
+              <div class="skill-category">
+                <h4>Team & Process</h4>
+                <p>
+                  Agile, Mentoring, Cross-functional Collaboration, AI-Enhanced
+                  Development Workflows, Team Development
+                </p>
               </div>
             </div>
           </section>
 
-          <section>
-            <h3>Languages</h3>
-            <div class="language-item">
-              <span class="language-name">Spanish</span>
-              <span class="language-level">Native</span>
-            </div>
-            <div class="language-item">
-              <span class="language-name">English</span>
-              <span class="language-level">Full Professional</span>
+          <section class="section">
+            <h2 class="section-title">Languages</h2>
+            <div class="skills-grid">
+              <div class="skill-category">
+                <h4>English</h4>
+                <p>Full Professional Proficiency</p>
+              </div>
+              <div class="skill-category">
+                <h4>Spanish</h4>
+                <p>Native</p>
+              </div>
             </div>
           </section>
 
-          <section>
-            <h3>Education</h3>
-            <div class="experience-item">
-              <div>
-                <span class="role">BS Software Engineering</span>
-                <span class="company">@ UPV</span>
+          <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education">
+              <div class="degree">
+                Bachelor of Science in Software Engineering
               </div>
-              <div class="date" style="margin-bottom: 10px">2014 – 2020</div>
-              <ul>
-                <li>
-                  Thesis on modular web development proposing micro-frontend
-                  architecture
-                </li>
-              </ul>
+              <div class="university">
+                Universitat Politècnica de València | 2014 – 2020
+              </div>
+              <div class="thesis">
+                <strong>Thesis:</strong> "Modular Web Development Architecture"
+                - Research in microfrontend patterns adopted in enterprise
+                environments
+              </div>
             </div>
           </section>
         </div>
